@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Quest</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>one <span>recipe</span></h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search ingredients or dishes...">
+        </div>
+        <nav class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="Lunch">Lunch</button>
+            <button class="filter-btn" data-filter="Dinner">Dinner</button>
+        </nav>
+    </header>
+
+    <main id="recipeGrid" class="recipe-grid">
+        </main>
+
+    <script src="script.js" defer></script>
+
+<div id="recipeModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modalDetails">
+            </div>
+    </div>
+</div>
+</body>
+</html>
